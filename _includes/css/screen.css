@@ -3,12 +3,58 @@
   padding: 0;
 }
 
+span.bold { font-weight: bold; }
+span.bb { font-weight: bold; font-size: 18px; }
+span.small { font-size: 13px; }
+
+mycode {
+  padding: 2px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: #e8e8e8;
+  font-family: Menlo,Consolas,"Courier New",monospace;
+  font-size: 13px;
+}
+
+ul {
+  font-size: 14px;
+}
+
+ul.top {
+  margin-top: -0.3em;
+}
+
+ul.top li {
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+ul.blog {
+  margin-top: -0.3em;
+}
+
+ul.blog li {
+  margin-left: 0em;
+  margin-bottom: 0.2em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+li {
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 15px;
   background-color: white;
   color: #222222;
   line-height: 24px;
@@ -18,7 +64,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
-  font-family: "open sans", sans-serif;
+  font-family: sans-serif;
   font-weight: 600;
 }
 
@@ -39,7 +85,13 @@ h2 {
 h3 {
   font-size: 21px;
   line-height: 24px;
-  margin: 1em 0;
+  /* margin: 1em 0; */ /* top and bottom 1em, right and left 0 */
+  margin-top: 1.5em;
+  margin-bottom: -0.2em;
+}
+
+h5 {
+  margin-bottom: 0.1em;
 }
 
 ul {
@@ -85,14 +137,14 @@ ul.posts li {
 }
 
 ul.posts span {
-  font-family: 'Lucida Console', 'Andale Mono', monospace;
-  color: #aaa;
+  font-family: sans-serif, 'Lucida Console', 'Andale Mono', monospace;
+  /* color: #aaa; */
   padding-right: 5px;
-  font-size:14px;
+  font-size: 14px;
 }
 
 .meta {
-  color: #aaa;
+  /* color: #aaa; */
   margin: 0 0 10px 0;
 }
 
@@ -104,7 +156,13 @@ ul.posts span {
 }
 
 nav h1, nav h2 {
-  text-align: center;
+  text-align: right;
+}
+
+#hi {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 #bio {
@@ -113,11 +171,34 @@ nav h1, nav h2 {
   border: dotted #ddd;
   border-width: 1px 0;
   padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+}
+
+#link {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-bottom: dotted #ddd;
+  border-width: 1px 0;
+  padding-bottom: 15px;
+  text-align: right;
 }
 
 #social {
   margin-bottom: 10px;
   font-size: 13px;
+  text-align: right;
+}
+
+#post {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 20px !important;
+}
+
+#post p {
+  padding-bottom: 15px;
 }
 
 #post pre {
@@ -145,7 +226,7 @@ nav h1, nav h2 {
 
 .sidebar {
   padding-top: 25px;
-  font-family: "open sans", sans-serif;
+  font-family: sans-serif;
 }
 
 .sidebar p {
@@ -157,7 +238,7 @@ nav h1, nav h2 {
 }
 
 .content {
-  font: 400 16px/22px "open sans", sans-serif;
+  font: 400 16px/22px sans-serif;
   border-left: 1px solid #DDD;
   padding-left: 40px;
   padding-top: 25px;
@@ -178,6 +259,10 @@ nav h1, nav h2 {
 .aside {
   font-size: 75%;
   color: #666;
+}
+
+#home {
+  font-size: 15px;
 }
 
 #home h2 {
@@ -218,7 +303,7 @@ nav h1, nav h2 {
 }
 
 i.fa-hn {
-  font-family: "open sans", sans-serif;
+  font-family: sans-serif;
   text-align: center;
   font-size: 18px !important;
   position: relative;
@@ -243,7 +328,15 @@ i.fa-hn {
 
 .footnotes {
   font-size: 14px;
-  font-style: italic;
+  /* font-style: italic; */
+}
+
+a.footnote {
+  font-size: 12px;
+}
+
+.footnotes li {
+  margin: -12px 0px 0px 0px;
 }
 
 .icon-overlay {
@@ -262,6 +355,8 @@ i.fa-hn {
 }
 
 sup {
-  vertical-align: super;
+  vertical-align: top;
   font-size: smaller;
+  position: relative;
+  top: -0.5em;
 }

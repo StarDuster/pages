@@ -1,5 +1,4 @@
 <nav>
-  <h1>Hi.</h1>
   <a href="/">
     {% if site.data.theme.social.gravatar %}
     <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
@@ -8,11 +7,14 @@
     {% endif %}
   </a>
   <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
-  <div id="bio">
-    <p>A brief bio or something witty.</p>
-    <p>
-      Edit me in <code>_includes/sidebar.html</code>
-    </p>
+  <div id="link" style="font-weight: 400">
+    ICT Student<br>
+    Former DevOps Engineer <br>
+    <a href="mailto:liujun.devops@gmail.com">liujun.devops@gmail.com</a>
+  </div>
+  
+  <div id="link">
+    <a href="/files/junliu_cv.pdf">CV (pdf)</a><br>
   </div>
   <div id="social">
     {% include social.html %}
