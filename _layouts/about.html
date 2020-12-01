@@ -6,9 +6,9 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">
-     {% if site.title == blank %}{{ site.title }}{% else %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %}
+     {% if site.title == blank %}{{ site.title }}{% else %}<span >{{ site.first_name }}</span> {{ site.middle_name }}  {{ site.last_name }}{% endif %}
     </h1>
-     <p class="desc">{{ page.description }}</p>
+     <h5 class="desc">{{ page.description }}</h5>
   </header>
 
   <article>
@@ -19,7 +19,8 @@ layout: default
       {% endif %}
       {% if page.profile.address %}
         <div class="address">
-          {{ page.profile.address }}
+          <i class="fas fa-blog"></i> <a href="https://www.starduster.me" target="_blank">Blog (in Chinese)</a><br>
+          <i class="fas fa-file-pdf"></i> <a href="assets/pdf/junliu_cv.pdf" target="_blank" style="padding-left: 4px;">CV (PDF)</a>
         </div>
       {% endif %}
     </div>
@@ -29,6 +30,22 @@ layout: default
       {{ content }}
     </div>
 
+    <div class="clearfix" style="margin-bottom: 32px;" >
+      <h2>Experiences</h2>
+      <div class="table-responsive">
+        <li style="margin-top: 5px;"><b>Aug 2017 - Jan 2020:</b> DevOps Engineer, NetEase.</li>
+        <li style="margin-top: 5px;"><b>Sep 2013 - July 2017:</b> BEng in Network Engineering, UESTC.</li>
+      </div>
+    </div>
+
+    <div class="clearfix" style="margin-bottom: 32px;" > 
+    <h2>Patents</h2>
+    <div class="table-responsive"></div>
+      <li><b>July 2018: </b><a href="https://patents.google.com/patent/CN109040040A/en?oq=CN109040040A" target="_blank" >Information transmission method and device, storage medium, and electronic device. CN109040040A</a></li>
+      <li><b>Mar 2018: </b><a href="https://patents.google.com/patent/CN110324365A/en?oq=CN110324365A" target="_blank" >Without key front end cluster system, application method, storage medium, electronic device. CN110324365A</a></li>
+      </div>
+    </div>
+    
     {% if page.news %}
       {% include news.html %}
     {% endif %}
