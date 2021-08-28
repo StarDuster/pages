@@ -15,6 +15,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
+I'm a master student in <a href="https://titech-caras.github.io/" target="_blank">CARAS Lab</a> at Tokyo Tech, supervised by <a href="https://hiroshi-sasaki.github.io/index-en.html" target="_blank">Prof. Hiroshi Sasaki</a>.
+
 I'm interested in computer architecture, cloud computing (including virtualization and networking) and operating systems (e.g. Linux kernel stack of networking).
 
 I got a bachelor's degree in network engineering from the University of Electronic Science and Technology of China (UESTC) in 2017. Then I joined NetEase as a DevOps engineer. In there, I was in charge of the load balance cluster of NetEase Games private cloud, dealing with Nginx and Linux networking.
