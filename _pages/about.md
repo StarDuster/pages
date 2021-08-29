@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: ICT Student, Former DevOps Engineer
+description: Computer System Student, Former DevOps Engineer
 
 profile:
   align: right
@@ -15,6 +15,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I'm interested in computer architecture, cloud computing (including virtualization and networking) and operating systems (e.g. Linux kernel stack of networking).
+I am a master student in <a href="https://titech-caras.github.io/index-en" target="_blank">CARAS Lab</a> at Tokyo Tech, supervised by Prof. Hiroshi Sasaki.
+
+My research interests mainly lie on computer architecture, cloud computing (including virtualization and networking) and operating systems.
 
 I got a bachelor's degree in network engineering from the University of Electronic Science and Technology of China (UESTC) in 2017. Then I joined NetEase as a DevOps engineer. In there, I was in charge of the load balance cluster of NetEase Games private cloud, dealing with Nginx and Linux networking.
